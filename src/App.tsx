@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
-import Plans from './components/Plans';
+import AdvancedPlans from './components/AdvancedPlans';
 import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -14,13 +14,15 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <Hero />
-      <Benefits />
-      <Services />
-      <HowItWorks />
-      <Plans />
-      <Testimonials />
-      <ContactForm />
+      <main>
+        <Hero />
+        <Benefits />
+        <Services />
+        <HowItWorks />
+        <AdvancedPlans />
+        <Testimonials />
+        <ContactForm />
+      </main>
       <Footer />
       <WhatsAppButton />
     </div>

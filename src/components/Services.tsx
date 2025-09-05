@@ -41,6 +41,10 @@ const Services: React.FC = () => {
     }
   ];
 
+  const scrollToContact = () => {
+    document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="servicos" className="py-16 lg:py-24 bg-slate-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,7 +63,7 @@ const Services: React.FC = () => {
             return (
               <div
                 key={index}
-                className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-slate-100"
+                className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-slate-100 flex flex-col"
               >
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                   <IconComponent className="w-7 h-7 text-blue-600" />
@@ -69,11 +73,11 @@ const Services: React.FC = () => {
                   {service.title}
                 </h3>
                 
-                <p className="text-slate-600 mb-6 leading-relaxed">
+                <p className="text-slate-600 mb-6 leading-relaxed flex-grow">
                   {service.description}
                 </p>
                 
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-sm text-slate-600">
                       <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-3"></div>
@@ -82,7 +86,10 @@ const Services: React.FC = () => {
                   ))}
                 </ul>
                 
-                <button className="w-full mt-6 bg-blue-50 text-blue-600 py-3 rounded-lg hover:bg-blue-100 transition-colors font-medium">
+                <button 
+                  onClick={scrollToContact}
+                  className="w-full mt-auto bg-blue-50 text-blue-600 py-3 rounded-lg hover:bg-blue-100 transition-colors font-medium"
+                >
                   Saiba mais
                 </button>
               </div>

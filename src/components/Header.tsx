@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
+import Logo from './Logo';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,14 +18,8 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center mr-3">
-              <span className="text-white font-bold text-xl">B</span>
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold text-slate-800">Bluu</h1>
-              <p className="text-sm text-slate-600 -mt-1">CONTABILIDADE</p>
-            </div>
+          <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <Logo className="h-10" />
           </div>
 
           {/* Desktop Navigation */}
