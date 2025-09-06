@@ -20,19 +20,40 @@ const pricingData = [
       {
         name: 'Básico',
         price: '59,90',
-        features: ['Abertura de empresa', 'Emissão de DAS', 'Escrituração Contábil', 'Suporte via email'],
+        features: [
+          'Abertura da empresa com orientação de especialista',
+          'Emissão e envio do DAS',
+          'Escrituração Contábil e Fiscal',
+          'Conta Bancária PJ Gratuita',
+          'Suporte via email',
+          'Declaração Anual MEI',
+        ],
       },
       {
         name: 'Essencial',
         price: '79,90',
         isRecommended: true,
-        features: ['Tudo do Básico', 'DIRPF do sócio', 'Pró-labore', 'Suporte via WhatsApp'],
+        features: [
+          'Todos os benefícios do plano Básico',
+          'Declaração de Imposto de Renda da Pessoa Física - DIRPF',
+          'Pro-labore',
+          'Folha de Pagamento 1 funcionários',
+          'Atendimento via Whatsapp',
+        ],
       },
       {
         name: 'Prime',
         price: '399,90',
         isFeatured: true,
-        features: ['Tudo do Essencial', 'BPO Financeiro', 'Consultoria Estratégica', 'Emissão de NFs'],
+        features: [
+          'Todos os benefícios do plano Essencial',
+          'BPO - Financeiro',
+          'Consultoria Financeira e Estratégica',
+          'Atendimendo via telefone ou chamada de vídeo',
+          'Especialista dedicado a sua empresa',
+          'Emissão de Notas Fiscais',
+          'Sistema Financeiro Gratuito',
+        ],
       },
     ],
   },
@@ -131,45 +152,120 @@ const pricingData = [
   },
   {
     category: 'Lucro Presumido',
-    plans: [
+    subcategories: [
       {
-        name: 'Básico',
-        price: '499,90',
-        features: ['Apuração PIS/COFINS/IRPJ/CSLL', 'ECD e EFD', 'Obrigações acessórias', 'Suporte especializado'],
+        name: 'Serviços',
+        plans: [
+          {
+            name: 'Básico',
+            price: '399,90',
+            features: [
+              'Abertura da empresa com orientação de especialista',
+              'Pró-labore - 1 sócio',
+              'Escrituração Contábil e Fiscal',
+              'Conta Bancária PJ Gratuita',
+              'Suporte via email'
+            ],
+          },
+          {
+            name: 'Essencial',
+            price: '499,90',
+            isRecommended: true,
+            features: [
+              'Todos os benefícios do plano Básico',
+              'Declaração de Imposto de Renda da Pessoa Física - DIRPF',
+              'Acompanhamento de parcelamentos',
+              'Folha de Pagamento Até 2 sócios e 3 funcionários',
+              'Atendimento via Whatsapp'
+            ],
+          },
+          {
+            name: 'Prime',
+            price: '899,90',
+            isFeatured: true,
+            features: [
+              'Todos os benefícios do plano Essencial',
+              'BPO - Financeiro',
+              'Consultoria Financeira e Estratégica',
+              'Atendimendo via telefone ou chamada de vídeo',
+              'Especialista dedicado a sua empresa',
+              'Emissão de Notas Fiscais',
+              'Sistema Financeiro Gratuito'
+            ],
+          },
+        ]
       },
       {
-        name: 'Essencial',
-        price: '799,90',
-        isRecommended: true,
-        features: ['Tudo do Básico', 'Folha (até 10 funcionários)', 'Análise de balanço', 'Consultoria fiscal'],
-      },
-      {
-        name: 'Prime',
-        price: '1.299,90',
-        isFeatured: true,
-        features: ['Tudo do Essencial', 'BPO Financeiro estratégico', 'Reuniões mensais', 'Contador sênior'],
-      },
-    ],
+        name: 'Comércio ou Indústria',
+        plans: [
+          {
+            name: 'Básico',
+            price: '599,90',
+            features: [
+              'Abertura da empresa com orientação de especialista',
+              'Pró-labore - 1 sócio',
+              'Escrituração Contábil e Fiscal',
+              'Conta Bancária PJ Gratuita',
+              'Suporte via email'
+            ],
+          },
+          {
+            name: 'Essencial',
+            price: '899,90',
+            isRecommended: true,
+            features: [
+              'Todos os benefícios do plano Básico',
+              'Declaração de Imposto de Renda da Pessoa Física - DIRPF',
+              'Acompanhamento de parcelamentos',
+              'Folha de Pagamento Até 2 sócios e 3 funcionários',
+              'Atendimento via Whatsapp'
+            ],
+          },
+          {
+            name: 'Prime',
+            price: 'Sob Consulta',
+            isFeatured: true,
+            features: [
+              'Todos os benefícios do plano Essencial',
+              'BPO - Financeiro',
+              'Consultoria Financeira e Estratégica',
+              'Atendimendo via telefone ou chamada de vídeo',
+              'Especialista dedicado a sua empresa',
+              'Emissão de Notas Fiscais',
+              'Sistema Financeiro Gratuito'
+            ],
+          },
+        ]
+      }
+    ]
   },
   {
     category: 'Lucro Real',
     plans: [
       {
-        name: 'Básico',
-        price: '999,90',
-        features: ['Apuração completa de impostos', 'LALUR', 'Entrega de obrigações', 'Contabilidade completa'],
-      },
-      {
         name: 'Essencial',
-        price: '1.599,90',
-        isRecommended: true,
-        features: ['Tudo do Básico', 'Folha (até 20 funcionários)', 'Consultoria tributária', 'Gerente de contas'],
+        price: 'Sob Consulta',
+        features: [
+          'Serviços Contábil e Fiscal completo',
+          'Declaração de Imposto de Renda da Pessoa Física - DIRPF',
+          'Acompanhamento de parcelamentos',
+          'Folha de Pagamento - Sócios gratuito, R$ 30,00 por funcionário',
+          'Atendimento personalizado conforme necessidade do cliente',
+        ],
       },
       {
         name: 'Prime',
-        price: '2.499,90',
+        price: 'Sob Consulta',
         isFeatured: true,
-        features: ['Tudo do Essencial', 'Planejamento tributário avançado', 'CFO as a service', 'Suporte 24/7'],
+        features: [
+          'Todos os benefícios do plano Essencial',
+          'BPO - Financeiro',
+          'Consultoria Financeira e Estratégica',
+          'Atendimento via telefone ou chamada de vídeo',
+          'Especialista dedicado a sua empresa',
+          'Emissão de Notas Fiscais',
+          'Sistema Financeiro Gratuito',
+        ],
       },
     ],
   },
@@ -390,13 +486,19 @@ const AdvancedPlans: React.FC = () => {
                 </div>
                 
                 <div className="mb-6">
-                  <p className={`text-5xl font-bold ${plan.isFeatured ? 'text-white' : 'text-slate-900'}`}>
-                    R$ {plan.price}
-                    <span className={`text-lg font-normal ${plan.isFeatured ? 'text-slate-400' : 'text-slate-500'}`}>/mês</span>
-                  </p>
+                  {plan.price === 'Sob Consulta' ? (
+                     <p className={`text-4xl font-bold ${plan.isFeatured ? 'text-white' : 'text-slate-900'}`}>
+                        {plan.price}
+                     </p>
+                  ) : (
+                    <p className={`text-5xl font-bold ${plan.isFeatured ? 'text-white' : 'text-slate-900'}`}>
+                      R$ {plan.price}
+                      <span className={`text-lg font-normal ${plan.isFeatured ? 'text-slate-400' : 'text-slate-500'}`}>/mês</span>
+                    </p>
+                  )}
                 </div>
 
-                {plan.isFeatured && (
+                {plan.isFeatured && plan.price !== 'Sob Consulta' && (
                   <div className="bg-blue-600 text-white text-xs font-semibold p-2 rounded-md mb-6 flex items-center justify-center space-x-2">
                     <span>OFERTA TERMINA EM:</span>
                     <CountdownTimer />
