@@ -44,20 +44,42 @@ const pricingData = [
         plans: [
           {
             name: 'Básico',
-            price: '189,90',
-            features: ['Apuração do Simples (Anexo III ou V)', 'Obrigações (DEFIS)', 'Pró-labore dos sócios', 'Relatórios contábeis'],
+            price: '89,90',
+            features: [
+              'Abertura da empresa com orientação de especialista',
+              'Pró-labore - 1 sócio',
+              'Escrituração Contábil e Fiscal',
+              'Conta Bancária PJ Gratuita',
+              'Suporte via email',
+              'Emissão de até 2 NFS-e'
+            ],
           },
           {
             name: 'Essencial',
-            price: '299,90',
+            price: '129,90',
             isRecommended: true,
-            features: ['Tudo do Básico', 'Folha (até 3 funcionários)', 'Conciliação bancária', 'Atendimento WhatsApp'],
+            features: [
+              'Todos os benefícios do plano Básico',
+              'Declaração de Imposto de Renda da Pessoa Física - DIRPF',
+              'Acompanhamento de parcelamentos',
+              'Folha de Pagamento Até 2 sócios e 2 funcionários',
+              'Atendimento via Whatsapp',
+              'Emissão de até 5 NFS-e'
+            ],
           },
           {
             name: 'Prime',
             price: '599,90',
             isFeatured: true,
-            features: ['Tudo do Essencial', 'BPO Financeiro completo', 'Planejamento tributário', 'Consultor dedicado'],
+            features: [
+              'Todos os benefícios do plano Essencial',
+              'BPO - Financeiro',
+              'Consultoria Financeira e Estratégica',
+              'Atendimento via telefone ou chamada de vídeo',
+              'Especialista dedicado a sua empresa',
+              'Emissão de Notas Fiscais',
+              'Sistema Financeiro Gratuito'
+            ],
           },
         ]
       },
@@ -66,20 +88,42 @@ const pricingData = [
         plans: [
           {
             name: 'Básico',
-            price: '249,90',
-            features: ['Apuração do Simples (Anexo I ou II)', 'Controle de estoque (orientação)', 'Obrigações (DEFIS)', 'Relatórios contábeis'],
+            price: '199,90',
+            features: [
+              'Abertura da empresa com orientação de especialista',
+              'Pró-labore - 1 sócio',
+              'Escrituração Contábil e Fiscal',
+              'Conta Bancária PJ Gratuita',
+              'Suporte via email',
+              'Emissão de até 2 NF-e'
+            ],
           },
           {
             name: 'Essencial',
-            price: '399,90',
+            price: '349,90',
             isRecommended: true,
-            features: ['Tudo do Básico', 'Folha (até 5 funcionários)', 'Emissão de NFe (orientação)', 'Atendimento WhatsApp'],
+            features: [
+              'Todos os benefícios do plano Básico',
+              'Declaração de Imposto de Renda da Pessoa Física - DIRPF',
+              'Acompanhamento de parcelamentos',
+              'Folha de Pagamento Até 2 sócios e 3 funcionários',
+              'Atendimento via Whatsapp',
+              'Emissão de até 5 NF-e'
+            ],
           },
           {
             name: 'Prime',
             price: '799,90',
             isFeatured: true,
-            features: ['Tudo do Essencial', 'Gestão de impostos sobre produtos', 'Planejamento tributário', 'Consultor dedicado'],
+            features: [
+              'Todos os benefícios do plano Essencial',
+              'BPO - Financeiro',
+              'Consultoria Financeira e Estratégica',
+              'Atendimendo via telefone ou chamada de vídeo',
+              'Especialista dedicado a sua empresa',
+              'Emissão de Notas Fiscais',
+              'Sistema Financeiro Gratuito'
+            ],
           },
         ]
       }
@@ -134,16 +178,24 @@ const pricingData = [
 // 3. DADOS DO FAQ
 const faqData = [
   {
-    question: 'Posso trocar de contador a qualquer momento?',
-    answer: 'Sim! A troca de contador é um direito seu e pode ser feita em qualquer mês. Nós cuidamos de todo o processo de migração para você, sem dor de cabeça.',
+    question: 'Quanto custa um contador online?',
+    answer: 'O preço da contabilidade online varia conforme o regime tributário e o porte da sua empresa. Nossos planos começam em R$ 89,90/mês, oferecendo uma solução completa e acessível para você economizar sem abrir mão da qualidade.',
   },
   {
-    question: 'Como funciona o atendimento e suporte?',
-    answer: 'Nosso suporte é 100% digital e humanizado. Você terá acesso a canais como WhatsApp, e-mail e videochamadas para falar diretamente com um especialista sempre que precisar.',
+    question: 'Como funciona a troca de contador?',
+    answer: 'A troca de contador é um direito seu e pode ser feita a qualquer momento. Nós cuidamos de todo o processo de migração para você, entrando em contato com seu contador antigo e organizando a documentação. É rápido, seguro e sem dor de cabeça.',
   },
   {
-    question: 'A abertura de empresa está inclusa?',
-    answer: 'Sim, ao contratar qualquer plano anual, o serviço de abertura da sua empresa é gratuito. Você paga apenas as taxas governamentais.',
+    question: 'É seguro ter uma contabilidade digital?',
+    answer: 'Sim, totalmente seguro. Utilizamos as melhores tecnologias de segurança de dados, com criptografia de ponta e servidores seguros, para garantir que suas informações estejam sempre protegidas, seguindo todas as diretrizes da LGPD.',
+  },
+  {
+    question: 'A abertura de empresa é gratuita?',
+    answer: 'Sim! Ao contratar qualquer um dos nossos planos anuais, o serviço para abrir sua empresa online é por nossa conta. Você paga apenas as taxas governamentais obrigatórias, e nós cuidamos de toda a burocracia.',
+  },
+  {
+    question: 'Qual o diferencial do BPO Financeiro?',
+    answer: 'O BPO Financeiro é a terceirização completa da sua gestão financeira. Além da contabilidade, cuidamos do seu contas a pagar e receber, fluxo de caixa e conciliação bancária, fornecendo relatórios para decisões estratégicas e liberando seu tempo para focar no negócio.',
   },
 ];
 
@@ -257,16 +309,16 @@ const AdvancedPlans: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">
-              Planos flexíveis para cada tipo de empresa
+              Planos de contabilidade online para sua empresa
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Escolha o regime tributário e encontre o plano perfeito. Sem surpresas, sem burocracia.
+              Encontre o <strong className="font-semibold text-blue-600">preço da contabilidade online</strong> ideal para o seu negócio. Planos transparentes, sem surpresas no final do mês.
             </p>
           </div>
 
           <div className="bg-blue-50 border-2 border-dashed border-blue-300 rounded-2xl p-6 text-center mb-12">
             <h3 className="text-xl font-bold text-slate-800 mb-2">Não sabe qual seu regime tributário?</h3>
-            <p className="text-slate-600 mb-4">Responda 2 perguntas e descubra o plano ideal para sua empresa.</p>
+            <p className="text-slate-600 mb-4">Responda 3 perguntas e nosso sistema recomenda o plano ideal para você <strong className="font-semibold">pagar menos impostos legalmente.</strong></p>
             <button 
               onClick={() => {
                 setIsQuizOpen(true);
@@ -275,7 +327,7 @@ const AdvancedPlans: React.FC = () => {
               className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center"
             >
               <Sparkles className="w-5 h-5 mr-2" />
-              Descobrir meu plano
+              Descobrir meu plano ideal
             </button>
           </div>
 
@@ -384,7 +436,7 @@ const AdvancedPlans: React.FC = () => {
               onClick={() => setShowComparator(!showComparator)}
               className="bg-transparent border-2 border-blue-600 text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors"
             >
-              {showComparator ? 'Esconder' : 'Comparar Planos'}
+              {showComparator ? 'Esconder Comparativo' : 'Comparar Planos'}
             </button>
           </div>
 
@@ -392,7 +444,7 @@ const AdvancedPlans: React.FC = () => {
             <div className="mt-12 overflow-x-auto animate-fade-in">
               <div className="min-w-[700px]">
                 <div className="grid grid-cols-4 gap-4 bg-slate-800 text-white p-4 rounded-t-lg font-bold">
-                  <div>Serviços</div>
+                  <div>Serviços de Contabilidade Digital</div>
                   {activePlans?.map(p => <div key={p.name} className="text-center">{p.name}</div>)}
                 </div>
                 <div className="divide-y divide-slate-200">
@@ -416,7 +468,7 @@ const AdvancedPlans: React.FC = () => {
           )}
 
           <div className="mt-24 max-w-4xl mx-auto">
-            <h3 className="text-center text-3xl font-bold text-slate-900 mb-12">Perguntas Frequentes</h3>
+            <h3 className="text-center text-3xl font-bold text-slate-900 mb-12">Perguntas Frequentes sobre Contabilidade Online</h3>
             <div className="space-y-4">
               {faqData.map((faq, index) => (
                 <div key={index} className="border border-slate-200 rounded-lg overflow-hidden">
